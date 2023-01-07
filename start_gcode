@@ -10,9 +10,9 @@ M117 Auto bed-level GO! ;
 G29 ; Auto bed-level (BL-Touch)
 G92 E0 ; Reset Extruder
 M104 S{material_print_temperature_layer_0} ; Set Extruder temperature
-M109 S{material_print_temperature_layer_0} ; Wait for Extruder temperature
 G1 Z1.0 F3000 ; move z up little to prevent scratching of surface
 G1 X0.1 Y20 Z30 F5000.0 ; move to start-line position
+M109 S{material_print_temperature_layer_0} ; Wait for Extruder temperature
 G1 X0.1 Y20 Z0.3 F5000.0 ; move to start-line position
 G1 X0.1 Y200.0 Z0.3 F1500.0 E15 ; draw 1st line
 G1 X0.4 Y200.0 Z0.3 F5000.0 ; move to side a little
